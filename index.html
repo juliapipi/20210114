@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Open+Sans:ital,wght@1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <title>珊迪幼兒園</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .wrap {
+      width: 100%;
+      display: flex;
+    }
+
+    .item {
+      width: 25%;
+      position: relative;
+    }
+
+    .item img {
+      width: 100%;
+      vertical-align: middle;
+    }
+
+    .item .txt {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, .6);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      opacity: 0;
+      transition: opacity .5s;
+    }
+
+    .item:hover .txt {
+      opacity: 1;
+    }
+
+    .item h2 {
+      font-size: 25px;
+      color: rgb(235, 194, 59);
+      font-weight: 500;
+    }
+
+    .item h2:after {
+      content: '';
+      display: block;
+      width: 0%;
+      height: 2px;
+      margin: 10px 0;
+      transition: width .5s .5s;
+      background-color: rgb(235, 194, 59);
+    }
+
+    .item:hover h2:after {
+      width: 100%;
+    }
+
+    .item p {
+      font-size: 20px;
+      color: #fff;
+      font-weight: 100;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./圖片/icons8-sandy-cheeks-64.png" style="width: 90%;" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="margin-right: 5px;">
+              <a class="nav-link active" aria-current="page" href="#welcome"
+                style="color: rgb(106, 112, 124) ; ">歡迎光臨珊迪幼稚園</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about" style="color:rgb(106, 112, 124) ;">點我看更多</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./reservation.html"
+                style="color: rgb(106, 112, 124) ;">點我預約</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./圖片/1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <p></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./圖片/2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <p></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./圖片/3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+  <section style="margin-bottom: 40px;">
+    <div class="container" style="margin-top: 20px;">
+      <div class="row">
+        <div class="col-md-8 offset-md-2 text-center">
+          <h3 id="welcome" style="color: salmon; font-weight: bolder;">
+            Welcome 珊迪幼稚園
+          </h3>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="./圖片/k1.jpg" style="width: 200%;" alt="">
+            </div>
+            <div class="col-md-8" style="padding-left: 280px;padding-top: 80px;font-size: 18px;color: rgb(6, 8, 8);">
+              珊迪運用包羅萬象的主題式活動，</br>讓孩子發現</br>國內外文化節慶的多樣性，</br>也讓學習更具生命力，</br>豐富孩子的學習心靈，</br>拉近師生們之間的情感，</br>這也是珊迪絞盡腦汁所推動創意式</br>活動的思考主軸。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="latest">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3 style="margin-bottom: 30px;">
+            環境與設施
+          </h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="outer">
+                <div class="upper">
+                  <img src="./圖片/a.jpg" alt="">
+                  <div class="innertext">
+                    <span>位於</span>
+                    <h4>遊樂廣場</h4>
+                  </div>
+                </div>
+                <div class="lower">
+                  <span>一個最接近美，靠近自然，貼近心靈的地方。</br>走在幼兒園裡，你聽到的，不只如此，</br>更有孩子們天真的笑聲和驚喜，滿足的讚嘆 !</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="outer">
+                <div class="upper">
+                  <img src="./圖片/b.jpg" alt="">
+                  <div class="innertext">
+                    <span>位於</span>
+                    <h4>學習教室</h4>
+                  </div>
+                </div>
+                <div class="lower">
+                  <span>空調套房式教室、實木地板、幼兒個人專用地板床、</br>通風採光良好、空氣清淨機、紫外線殺菌燈，</br>消毒、滅菌保護幼兒健康。</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="outer">
+                <div class="upper">
+                  <img src="./圖片/d.jpg" alt="">
+                  <div class="innertext">
+                    <span>位於</span>
+                    <h4>藝術空間</h4>
+                  </div>
+                </div>
+                <div class="lower">
+                  <span>提供多元課程，</br>含肢體律動、美感藝術創作、</br>音樂律動及體能活動。</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="latest2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3 style="margin-bottom: 30px;">
+            珊迪的老師
+          </h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="outer">
+                <div class="upper">
+                  <img src="./圖片/t1.jpg" alt="">
+                  <div class="innertext">
+                    <span>向日葵班</span>
+                    <h4>吉永老師</h4>
+                  </div>
+                </div>
+                <div class="lower">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="outer">
+                <div class="upper">
+                  <img src="./圖片/t2.jpg" alt="">
+                  <div class="innertext">
+                    <span>玫瑰班</span>
+                    <h4>松坂老師</h4>
+                  </div>
+                </div>
+                <div class="lower">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="outer">
+                <div class="upper">
+                  <img src="./圖片/t3.jpg" alt="">
+                  <div class="innertext">
+                    <span>櫻花班</span>
+                    <h4>上尾老師</h4>
+                  </div>
+                </div>
+                <div class="lower">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3 id="about" style="margin-top: 30px;text-align: center;color: sienna;font-weight: bolder;">關於珊迪幼稚園</h3>
+    <div class="wrap" style="margin-top: 20px;">
+      <div class="item">
+        <img src="./圖片/k2.jpg" alt="">
+        <div class="txt">
+          <h2>體能養成</h2>
+          <p>健康從小開始養成，透過球類與各項運動，讓孩子從小培養體能。</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./圖片/k3.jpg" alt="">
+        <div class="txt">
+          <h2>淺能開發</h2>
+          <p>透過遊戲方式激發孩子的淺能與興趣，讓孩子的童年裡不只是書本。</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./圖片/k5.jpg" alt="">
+        <div class="txt">
+          <h2>美感培養</h2>
+          <p>藉由創作與畫畫，記錄孩子每個成長的時期與歷程，並且提升孩子的美感。</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./圖片/k6.jpg" alt="">
+        <div class="txt">
+          <h2>邏輯思考</h2>
+          <p>從具體到抽象，並靠感知和動作能力來完成。孩子只有在聽、看、玩的過程中，才能有效地進行思考。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

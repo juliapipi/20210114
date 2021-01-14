@@ -1,0 +1,44 @@
+p,a,label,span,li,ul,h3,h4{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.col-xs-12{
+    width: 100%;
+    float: left;
+}
+#latest{
+    padding: 40px 0px;
+    background: rgb(248, 248, 248);
+}
+#latest2{
+    padding: 40px 0px;
+    background: rgb(248, 248, 248);}
+
+#latest h3{
+    margin-bottom:40px ; color:  salmon; font-weight: bolder;
+}
+
+#latest2 h3{
+    margin-bottom:40px ; color:  salmon; font-weight: bolder;
+}
+
+.outer{
+    background: white;padding: 10px;box-shadow:0 0 8px 0 rgba(0, 0, 0, 0.08);
+}
+.upper{
+    position: relative;;
+}
+.innertext{
+    position: absolute; left: 8px;bottom: 0px;
+}
+.innertext span{
+    background: rgba(245, 128, 128, 0.7); padding: 6px 15px; border-radius: 20px;color: black;
+}
+.innertext h4{
+    margin-top: 8px;color: black;background: rgba(245, 128, 128, 0.5); padding: 5px 12px; border-radius: 15px;
+}
+#latest2 .innertext span{
+    background: rgba(233, 245, 126, 0.7); padding: 6px 15px; border-radius: 20px;color: black;
+}
+#latest2 .innertext h4{
+    margin-top: 8px;color: black;background: rgba(137, 247, 86, 0.6); padding: 5px 12px; border-radius: 15px;
+}
